@@ -1,0 +1,283 @@
+{
+ "pack": "warcraft2",
+ "unitFrame": 72,
+ "team": {
+  "source": [
+   [
+    165,
+    0,
+    0
+   ],
+   [
+    125,
+    0,
+    0
+   ],
+   [
+    93,
+    4,
+    0
+   ],
+   [
+    68,
+    4,
+    0
+   ]
+  ],
+  "ramps": [
+   [
+    [
+     12,
+     72,
+     206
+    ],
+    [
+     4,
+     40,
+     161
+    ],
+    [
+     0,
+     20,
+     117
+    ],
+    [
+     0,
+     4,
+     76
+    ]
+   ],
+   [
+    [
+     165,
+     0,
+     0
+    ],
+    [
+     125,
+     0,
+     0
+    ],
+    [
+     93,
+     4,
+     0
+    ],
+    [
+     68,
+     4,
+     0
+    ]
+   ]
+  ]
+ },
+ "units": {
+  "melee": {
+   "sheet": [
+    360,
+    864
+   ],
+   "team": [
+    "melee",
+    "melee-1"
+   ]
+  },
+  "archer": {
+   "sheet": [
+    360,
+    720
+   ],
+   "team": [
+    "archer",
+    "archer-1"
+   ]
+  },
+  "sven": {
+   "sheet": [
+    360,
+    1008
+   ],
+   "team": [
+    "sven",
+    "sven-1"
+   ]
+  },
+  "zeus": {
+   "sheet": [
+    360,
+    1152
+   ],
+   "team": [
+    "zeus",
+    "zeus-1"
+   ]
+  }
+ },
+ "buildings": {
+  "throne": {
+   "sheet": [
+    128,
+    256
+   ],
+   "team": [
+    "throne",
+    "throne-1"
+   ],
+   "base": 0.945
+  },
+  "barracks": {
+   "sheet": [
+    96,
+    192
+   ],
+   "team": [
+    "barracks",
+    "barracks-1"
+   ],
+   "base": 0.99
+  },
+  "tower": {
+   "sheet": [
+    64,
+    128
+   ],
+   "team": [
+    "tower",
+    "tower-1"
+   ],
+   "base": 0.984
+  },
+  "merchant": {
+   "sheet": [
+    96,
+    192
+   ],
+   "team": [
+    "merchant",
+    "merchant-1"
+   ],
+   "base": 0.854
+  }
+ },
+ "effects": {
+  "explosion": {
+   "sheet": [
+    896,
+    64
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "frames": 14,
+   "rate": 26
+  },
+  "lightning": {
+   "sheet": [
+    320,
+    32
+   ],
+   "frame": [
+    32,
+    32
+   ],
+   "frames": 10,
+   "rate": 20
+  },
+  "fire": {
+   "sheet": [
+    480,
+    32
+   ],
+   "frame": [
+    32,
+    32
+   ],
+   "frames": 15,
+   "rate": 14
+  }
+ },
+ "ui": {
+  "panel-cap": [
+   176,
+   24
+  ],
+  "minimap": [
+   24,
+   2,
+   128,
+   128
+  ],
+  "panel-map": [
+   176,
+   136
+  ],
+  "panel-body": [
+   176,
+   144
+  ],
+  "border-top": [
+   448,
+   16
+  ],
+  "border-bottom": [
+   448,
+   16
+  ],
+  "border-right": [
+   16,
+   480
+  ]
+ },
+ "sounds": {
+  "hit-melee": [
+   "hit-melee-0",
+   "hit-melee-1",
+   "hit-melee-2"
+  ],
+  "shot": [
+   "shot"
+  ],
+  "hit-shot": [
+   "hit-shot"
+  ],
+  "death-0": [
+   "death-0"
+  ],
+  "death-1": [
+   "death-1"
+  ],
+  "building-down": [
+   "building-down-0",
+   "building-down-1",
+   "building-down-2"
+  ]
+ },
+ "icon": {
+  "w": 46,
+  "h": 38,
+  "cols": 8,
+  "index": {
+   "runesmiths_hammer": 0,
+   "great_axe": 1,
+   "call_to_arms": 2,
+   "thor": 3,
+   "shocking_grasp": 4,
+   "puncture": 5,
+   "toughness": 6,
+   "odin": 7,
+   "healing": 8,
+   "potion_red": 9,
+   "boots_fur": 10,
+   "rimmed_shield": 11,
+   "long_sword": 12,
+   "ioun": 13,
+   "ring": 14,
+   "mace_mastery": 15,
+   "short_sword": 16,
+   "crown": 17,
+   "warrior_varangian_era": 18,
+   "priest": 19
+  }
+ }
+}

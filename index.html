@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark" />
+    <title>Warlane</title>
+    <script type="module" crossorigin src="./assets/index-DsmhQo2x.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-COqEqvAc.css">
+  </head>
+  <body>
+    <main id="lobby" class="panel">
+      <h1>Warlane</h1>
+      <p id="invite" hidden></p>
+      <p class="muted">
+        Три точки, три дороги. Держишь точку, получаешь золото и отряды на вражескую базу.
+        Снеси трон или разрушь больше к 15:00.
+      </p>
+      <label class="field">
+        <span>Имя</span>
+        <input id="name" maxlength="16" autocomplete="off" spellcheck="false" />
+      </label>
+      <div class="row">
+        <button id="btn-host" type="button" class="primary">Создать комнату</button>
+      </div>
+      <div class="row">
+        <input
+          id="code"
+          placeholder="Код комнаты"
+          maxlength="5"
+          autocapitalize="characters"
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <button id="btn-join" type="button">Войти</button>
+      </div>
+      <p id="lobby-status" class="muted" role="status"></p>
+      <p id="build" class="muted small"></p>
+      <p id="art-credit" class="muted small"></p>
+    </main>
+
+    <div id="game" hidden></div>
+
+    <!--
+      The carved stone the game is framed in, as Warcraft 2 framed it: a column
+      down the left holding the map and the hero, and three strips round the
+      field. Only the Warcraft 2 art pack ships these pictures; with the free
+      pack the body simply never gets the `wc2` class and the stone stays hidden.
+    -->
+    <div id="chrome" hidden aria-hidden="true">
+      <div id="chrome-panel">
+        <div id="chrome-cap"></div>
+        <div id="chrome-map"></div>
+        <div id="chrome-body"></div>
+      </div>
+      <div id="chrome-top"></div>
+      <div id="chrome-bottom"></div>
+      <div id="chrome-right"></div>
+    </div>
+
+    <aside id="hud" hidden>
+      <div id="hud-topleft" class="hud-box">
+        <div class="hud-line">
+          <strong id="hud-room"></strong>
+          <button id="btn-sound" type="button" title="Звук">Звук</button>
+          <button id="btn-copy" type="button">Скопировать ссылку</button>
+        </div>
+        <div class="hud-line small" id="hud-stats"></div>
+        <div class="hud-line small muted" id="hud-status"></div>
+      </div>
+
+      <div id="hud-top" class="hud-box">
+        <div id="hud-timer">Лобби</div>
+        <div id="hud-lanes"></div>
+        <div id="hud-score"></div>
+      </div>
+
+      <div id="hud-hero" class="hud-box">
+        <div id="hero-head">
+          <span id="hero-face"></span>
+          <div id="hero-name"></div>
+        </div>
+        <div class="hp-bar"><div id="hero-hp-fill"></div><span id="hero-hp"></span></div>
+        <div class="hp-bar mana-bar"><div id="hero-mp-fill"></div><span id="hero-mp"></span></div>
+        <div id="abilities"></div>
+        <div id="inventory"></div>
+        <div class="hud-line small"><span id="hero-gold"></span> · У/С/П <span id="hero-kda"></span></div>
+      </div>
+
+      <div id="feed"></div>
+
+      <canvas id="minimap" width="282" height="162"></canvas>
+
+      <div id="overlay" hidden>
+        <div id="overlay-text"></div>
+        <div id="roster" hidden></div>
+        <div id="hero-pick" hidden></div>
+        <button id="btn-start" type="button" class="primary" hidden>Начать матч</button>
+        <button id="btn-rematch" type="button" class="primary" hidden>Ещё матч</button>
+        <button id="btn-leave" type="button" hidden>Вернуться в лобби</button>
+        <div id="overlay-hint" class="muted"></div>
+      </div>
+
+      <div id="shop" class="hud-box" hidden>
+        <div id="shop-title"></div>
+        <div id="shop-goods"></div>
+      </div>
+
+      <div id="notice" hidden></div>
+
+      <div id="hud-hint" class="muted small">
+        Клик по земле: идти · по врагу: атаковать · Q W E R или ячейка внизу: умение, затем клик по врагу ·
+        A: ближайший враг · S: стоп · Пробел: камера к герою · 1–6: предмет ·
+        подойдите к лавке, чтобы купить
+      </div>
+    </aside>
+
+  </body>
+</html>
